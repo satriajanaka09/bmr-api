@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_23_102837) do
+ActiveRecord::Schema.define(version: 2021_08_23_113324) do
 
   create_table "bmrs", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.decimal "weight", precision: 10
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2021_08_23_102837) do
     t.integer "age"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.decimal "bmr_value", precision: 10
   end
 
 end
